@@ -1,0 +1,158 @@
+.container {
+  display: flex;
+  align-items: flex-start; /* Alinea los elementos al inicio vertical */
+  flex-direction: row;
+}
+
+.form-images {
+  flex: 1; /* Que el canvas ocupe todo el espacio disponible */
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los elementos al inicio horizontal */
+  margin-left: 20px;
+}
+
+.search-label {
+  white-space: nowrap;
+  display: inline-block;
+  width: 250px; /* Incrementa el ancho según sea necesario */
+  margin-right: 50px; /* Agrega espacio entre la etiqueta y la entrada de búsqueda */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  width: 100px; /* Ancho fijo para las etiquetas */
+  white-space: nowrap;
+  margin-right: 10px;
+  text-align: right; /* Alinear el texto de las etiquetas a la derecha */
+  display: inline-block;
+  margin-right: 50px; /* Agrega espacio entre la etiqueta y la entrada de búsqueda */
+}
+
+.form-group input {
+  width: 200px; /* Ancho fijo para los campos de entrada */
+  padding: 5px; /* Padding interno de los campos de entrada */
+}
+
+.form-buttons-container {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección de los elementos a columnas */
+  align-items: flex-start; /* Alinea los botones al inicio (izquierda) */
+  margin-top: 10px; /* Espacio entre los campos de entrada y los botones */
+}
+
+.btn {
+  background-color: #337ab7;
+  border: 2px solid #2e6da4;
+  color: #fff;
+  padding: 5px 10px; /* Reduce el padding para hacer el botón más pequeño */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Tamaño de fuente */
+  margin-top: 10px; /* Margen entre botones */
+  margin-bottom: 10px;
+  width: 150px; /* Ajusta el ancho del botón */
+  text-align: center; /* Centra el texto dentro del botón */
+  display: flex;
+  flex-direction: column; /* Cambia la dirección de los elementos a columnas */
+  align-items: flex-start; /* Alinea los botones al inicio (izquierda) */
+  margin-top: 10px; /* Espacio entre los campos de entrada y los botones */
+}
+
+.btn-primary:hover {
+  background-color: #23527c;
+  border-color: #1d4e7a;
+  
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  color: white;
+}
+
+.btn-danger:active {
+  background-color: #ac1010;;
+  color: white;
+}
+
+.btn-danger:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem #ac1010;;
+}
+
+.botones-areas {
+  padding: 10px 10px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cursor al pasar */
+  background-color: #ac1010; /* Color de fondo */
+  color: #ffffff; /* Color del texto */
+  border: 2px solid #ac1010; /* Borde */
+  width: 150px; /* Ajusta el ancho del botón */
+  text-align: center; /* Centra el texto dentro del botón */
+}
+
+/* Ajustes adicionales para asegurar que los botones tengan el mismo tamaño */
+.form-buttons-container > .btn,
+.form-buttons-container > .botones-areas {
+  width: 150px; /* Ajusta el ancho del botón */
+}
+
+
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group .form-control {
+  flex: 1;
+}
+
+.input-group .btn {
+  margin-left: 10px;
+}
+
+.area-info {
+  margin-top: 20px;
+}
+
+/* Estilos para el ícono de la lupa */
+.search-icon {
+  width: 35px;
+  height: 35px;
+  background-image: url('/assets/Lupa.jpg'); /* Asegúrate de proporcionar la ruta correcta a tu imagen de la lupa */
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
